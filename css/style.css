@@ -1,5 +1,6 @@
 /* general */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -30,17 +31,18 @@
     padding-left: 2rem ;
 
 }
+
 /*Barra Navegacion*/
 .barra-nav {
     display: flex;
     align-items: center;
     background-color: #F0A83E;
     padding-left: 2rem;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
 }
 .barra-nav h1 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bolder;
     align-items: center;
     justify-content: space-between;
@@ -49,29 +51,25 @@
     color: #FFFFFF;
 
 }
-
 .barra-nav ul li a {
     color: #FFF;
     font-weight: 500;
     font-size: 15px;
     display: flex;
     
-
 }
 .barra-nav ul {
     display: flex;
-    padding: 1rem  0rem 0.5rem 46.5rem;
-    align-items: center;
-}
-.barra-nav li {
-    padding: 0rem 1.6rem 0rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding-left: 47.5rem;
+    
 }
 
+.barra-nav a {
+    padding-right: 1rem;
+}
 .barra-nav img {
-    margin-right: 0.4rem;
+    margin-left: 0.3rem;
+    margin-right: 0.2rem;
 }
 
 
@@ -81,7 +79,7 @@
     background:url('../img/bowl-and-pet-daities-on-green-background1.png') ;
     background-size: cover;
     color:#3C2313;
-    height: 42rem;
+    height: 43rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -104,7 +102,7 @@
 
 .contenedor .seccionBanner .descuentos, .comederos {
     font-size: 16px;
-    margin: 10px 0px 0px 85px
+    margin: 0.625rem 0rem 0rem 5.313rem;
 }
 
 .seccionBanner .comederos {
@@ -114,7 +112,7 @@
     color: #FFF;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0px 0px 120px
+    margin: 0.625rem 0rem 0rem 7.5rem;
     
 }
 .productos .pata {
@@ -150,12 +148,12 @@
     
 }
 .cards img {
-    margin-left: 85px;
+    margin-left: 5.5rem;
 }
 
 .cards figure figcaption {
     position: relative;
-    margin-top: 10px ;
+    margin-top: 1rem ;
 }
 
 .cards figure figcaption .precio {
@@ -184,8 +182,8 @@
     background-color: #3C2313;
     border-radius: 18px;
     border-style: none;
-    padding: 15px 250px 15px 15px;
-    margin: 7px;
+    padding: 0.938rem 15rem 0.938rem 0.938rem;
+    margin: 0.4rem;
     color: #FFFFFF
 }
 .contactoMain ::placeholder{
@@ -205,7 +203,7 @@ button[type="reset"] {
     background-color: #8A8787;
     border-radius: 20px;
     border-style: none;
-    padding: 10px 30px 10px 30px;
+    padding: 0.6rem 1.8rem 0.6rem 1.8rem;
     margin-right: 3rem;
     color: #FFFFFF;
 }
@@ -213,7 +211,7 @@ button[type="submit"] {
     background-color: #F0A83E;
     border-radius: 20px;
     border-style: none;
-    padding: 10px 38px 10px 37px;
+    padding: 0.6rem 2.2rem 0.6rem 2.2rem;
     color: #FFFFFF;
 }
 .botones {
@@ -238,7 +236,7 @@ button[type="submit"] {
     margin-top: 5rem;
 }
 .suscribite img {
-    padding-left: 2rem;
+    padding-left: 1.2rem;
 }
 h4 {
     font-weight: 700;
@@ -249,17 +247,20 @@ h4 {
 .suscribirme input{
     background-color: #FFFFFF;
     color:#A0A0A0;
-    border-radius: 18px;
+    border-radius: 1.2rem;
     border-style: none;
-    padding: 15px 250px 15px 15px;
+    padding: 1rem 15rem 1rem 1rem;
     margin-left: 30rem;
 }
 
 .suscribirme button{
+    
+    
+    justify-content: center;
     background-color: #3C2313;
     font-size: 12px;
     font-weight: 600;
-    padding: 12px 25px 12px 25px;
+    padding: 1.1rem 2.2rem 1.1rem ;
     margin-left: 1rem;
 }
 
@@ -281,7 +282,7 @@ h5 {
     color: #8A8787;
     font-size: 15px;
     font-weight: 700;
-    padding-left: 5rem;
+    padding-left: 5.6rem;
 }
 .informacion img {
     padding-top: 3rem;
@@ -295,5 +296,65 @@ h5 {
     justify-content: center;
 }
 
+/*Media Queries*/
+
+@media all and (max-width: 768px ){
+    .top {
+        display: none;
+    }
+    .seccionBanner .descuentos {
+        display: none;
+    }
+    .barra-nav {
+        align-items: flex-start;
+        padding-left: unset;
+        align-items: center;
+        padding-left: 0.5rem;
+    }
+    .barra-nav h1 {
+        font-size: 20px;
+    }
+    .seccionBanner{
+        justify-content: center;
+    }
+    .productos .productosDestacados {
+        font-size: 30px;
+    }
+    .cards {
+        flex-direction: column;
+        grid-template-columns: unset;
+    }
+    .cards img {
+    margin-left: unset;
+    padding-top: 1.5rem;
+    }
+    .cards figure figcaption .precio{
+        padding-top: 0.25rem;
+    }
+    
+    .formulario form {
+        flex-wrap: unset;
+    }
+    .suscribite {
+        display: inherit;
+        margin-top: 2rem;
+    } 
+    h4 {
+        align-items: center;
+        justify-content: center;
+        margin-left: 4.5rem;
+        margin-top: -2.2rem;
+    }
+    .suscribirme input {
+        margin-left: 1rem;;
+        margin-top: 1rem;
+        padding: 0.8rem 4rem 0.8rem 0.5rem;
+    }
+    .suscribirme button {
+        padding: 0.8rem 1rem 0.8rem 1rem;
+        margin-left: 0.5rem;
+    }
+
+}
 
 
