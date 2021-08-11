@@ -352,7 +352,8 @@ h5 {
     }
     
     .contactoMain input{
-        padding: 0.938rem 10rem 0.938rem 0.938rem;
+        
+        padding: 0.8rem 8rem 0.8rem 0.938rem;
     }
     .suscribite {
         display: inherit;
