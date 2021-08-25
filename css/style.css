@@ -37,19 +37,20 @@
     display: flex;
     align-items: center;
     background-color: #F0A83E;
-    padding-left: 2rem;
-    padding-bottom: 0.8rem;
-    padding-top: 0.8rem;
+    justify-content: space-between;
+    padding: 0.8rem 0rem 0.8rem 0rem;
 }
-.barra-nav h1 {
+.barra-nav  h1 {
     font-size: 22px;
     font-weight: bolder;
+}
+.barra-nav .logo {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    padding-left: 1.6rem;
 }
 .barra-nav h1 span {
     color: #FFFFFF;
-
 }
 .barra-nav ul li a {
     color: #FFF;
@@ -58,16 +59,15 @@
     display: flex;
     
 }
+
 .barra-nav ul {
     display: flex;
-    margin-left: auto;
-    float: right;
+    padding-right: 2.5rem;
 }
 
 
 .barra-nav a {
     padding-right: 1rem;
-    
 }
 .barra-nav img {
     margin-left: 0.3rem;
@@ -86,7 +86,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+    padding-left: 1rem;
 }
 .contenedor.seccionBanner {
     text-align: center;
@@ -155,11 +155,11 @@
 }
 .cards img {
     padding-left: 1rem ;
-    transition: 0.9s;
+    transition: 0.8s;
 }
 .cards img:hover {
     transform: scale(1.1);
-    opacity: 85%;
+    opacity: 80%;
 }
 .cards figure figcaption {
     position: relative;
@@ -324,6 +324,9 @@ h5 {
     }
     .barra-nav nav {
         display: none;
+    }
+    .barra-nav .logo {
+        padding-left: 0rem;
     }
     .seccionBanner{
         justify-content: center;
