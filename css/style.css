@@ -52,15 +52,14 @@
 .barra-nav h1 span {
     color: #FFFFFF;
 }
-.barra-nav ul li a {
+.barra-nav  a {
     color: #FFF;
     font-weight: 500;
     font-size: 15px;
     display: flex;
-    
 }
 
-.barra-nav ul {
+.animacion {
     display: flex;
     padding-right: 2.5rem;
 }
@@ -69,11 +68,37 @@
 .barra-nav a {
     padding-right: 1rem;
 }
-.barra-nav img {
-    margin-left: 0.3rem;
-    margin-right: 0.2rem;
-    
+
+.animacion a::before{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 3.5px;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    width: 0%;
+    transition: all ease-in-out 250ms;
 }
+
+.animacion a:hover:nth-child(1):before{
+    width: 4.6rem;
+}
+.animacion a:hover:nth-child(2):before{
+    width: 2rem;
+}
+.animacion a:hover:nth-child(3):before{
+    width: 3.9rem;
+}
+.animacion a:hover:nth-child(4):before{
+    width: 5.4rem;
+}
+
+
+
+
+
+
+
 
 
 /* main */
@@ -119,7 +144,6 @@
 }
 .comederos:hover {
     transform: scale(1.2);
-    
 }
 .productos .pata {
     display: flex;
